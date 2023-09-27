@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+	font-family: Montserrat, sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.profile {
+    background: linear-gradient(to bottom left, #B7C2FF, #8DA3FF, #8DA3FF, #6283FF);
+}
+
+.profile .profile-photo {
+	border: 1px solid #fff;
+	border-radius: 50%;
+	padding: 7px;
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+    transition: border-top-color 0.2s linear 0s, border-right-color 0.2s linear 0.1s, border-bottom-color 0.2s linear 0.2s, border-left-color 0.2s linear 0.3s;
+}
+
+.profile .profile-photo:hover {
+    border-color: #000;
+}
+
+.profile .role {
+    background-color: #8A92FC;
+}
+
+.buttons {
+    align-items: center;
+    justify-content: center;
+}
+
+.social a {
+    text-decoration: none !important;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 20px;
+    font-size: 25px;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.social a i {
+    position: relative;
+    z-index: 3;
+}
+
+.social a:last-child {
+    margin-right: 0px;
+}
+
+.social a:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.social a i {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* social btns */
+.social a {
+    transition: border-top-color 0.2s linear 0s, border-right-color 0.2s linear 0.1s, border-bottom-color 0.2s linear 0.2s, border-left-color 0.2s linear 0.3s;
+    overflow: visible;
+}
+
+.social a:hover {
+    border-color: #000;
+    color: #000;
+}
+
+.social a:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: -2px;
+    left: -2px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.vertical-align-middle {
+    vertical-align: middle;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.social .button {
+    color: #fff;
+    border: 1px solid #fff;
+    width: 120px;
+    height: 60px;
+}
+
+/* timeline */
+.section-title {
+  margin-bottom: 60px;
+}
+.section-title p {
+	color: #777;
+	font-size: 16px;
+}
+.section-title h4 {
+	text-transform: capitalize;
+	font-size: 40px;
+	position: relative;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+.section-title h4:before {
+	position: absolute;
+	content: "";
+	width: 60px;
+	height: 2px;
+	background-color: #6283FF;
+	bottom: 0;
+	left: 50%;
+	margin-left: -30px;
+}
+.section-title h4:after {
+	position: absolute;
+	background-color: #6283FF;
+	content: "";
+	width: 10px;
+	height: 10px;
+	bottom: -4px;
+	left: 50%;
+	margin-left: -5px;
+	border-radius: 50%;
+}
+
+.timeline-area {
+    border-left: 2px solid #6283FF;
+    padding: 0 20px 0 30px;
+    max-width: 500px;
+}
+
+.timeline-area div {
+    padding: 10px 25px;
+    font-size: 16px;
+    border: 1px solid #000;
+    line-height: 1.7;
+    position: relative;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.timeline-area div:before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #6283FF;
+    border: 3px solid #6283FF;
+    position: absolute;
+    top: 10px;
+    left: -37px;
+}
+
+.timeline-area div:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent #6283FF transparent transparent;
+    border-width: 8px;
+    position: absolute;
+    top: 10px;
+    left: -17px;
+}
+
+.timeline-area div h2, h3, h4 {
+    margin: 0;
+}
+
+.timeline-area div h3 {
+    font-size: 20px;
+}
+
+.timeline-area div h4 {
+    font-size: 18px;
+}
