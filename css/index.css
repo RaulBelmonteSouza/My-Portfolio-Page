@@ -109,6 +109,24 @@ a {
     height: 60px;
 }
 
+/* TABS */
+#tabs .nav-link.active {
+    border-bottom: 3px solid #6283FF;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #6283FF;
+}
+
+#tabs .nav-link {
+    color: #777;
+}
+
+#content-tab img {
+    max-width: 150px;
+    max-height: 100px;
+}
+
 /* timeline */
 .section-title {
   margin-bottom: 60px;
