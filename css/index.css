@@ -123,8 +123,13 @@ a {
 }
 
 #content-tab img {
-    max-width: 150px;
-    max-height: 100px;
+    max-width: 120px;
+    max-height: 70px;
+}
+
+/* PROJECTS */
+.card a {
+    background-color: #6283FF;
 }
 
 /* timeline */
