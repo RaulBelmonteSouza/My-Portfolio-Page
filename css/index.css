@@ -128,8 +128,29 @@ a {
 }
 
 /* PROJECTS */
+
+.card {
+    min-height: 400px;
+    max-height: 400px;
+}
+
+.card img {
+    height: 170px;
+    width: 290;
+    object-fit: cover;
+}
+
 .card a {
+    margin-top: 20px;
     background-color: #6283FF;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+
+.card a.live-demo {
+    right: 15%;
+    left: auto;
 }
 
 /* timeline */

@@ -62,7 +62,7 @@
             </div>
 
             <div class="col-lg-10">
-                <div id="cards" class="row">
+                <div id="cards" class="row justify-content-center">
                     
                 </div>
             </div>
@@ -88,7 +88,7 @@
                   </ul>
                   <div class="tab-content" id="content-tab">
                     <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                        <div class="row">
+                        <div class="row text-center">
                             <div class="col-12 col-md-4 col-lg-3 col-xl-2 m-3 my-auto mt-4"><img src="img/confluence-logo.png" alt="Confluence logo"></div>
                             <div class="col-12 col-md-4 col-lg-3 col-xl-2 m-3 my-auto mt-4"><img src="img/jira-logo.png" alt="Jira logo"></div>
                             <div class="col-12 col-md-4 col-lg-3 col-xl-2 m-3 my-auto mt-4"><img src="img/trello-logo.png" alt="Trello logo"></div>
@@ -103,7 +103,7 @@
                         </div>
                     </div>
                     <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-                        <div class="row">
+                        <div class="row text-center">
                             <div class="col-12 col-md-4 col-lg-3 col-xl-2 m-3 my-auto mt-4"><img src="img/java-logo.png"></div>
                             <div class="col-12 col-md-4 col-lg-3 col-xl-2 m-3 my-auto mt-4"><img src="img/spring-logo.svg"></div>
                             <div class="col-12 col-md-4 col-lg-3 col-xl-2 m-3 my-auto mt-4"><img src="img/angular-logo.svg"></div>
@@ -131,7 +131,7 @@
                         </div>
                     </div>
                     <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-                        <div class="row">
+                        <div class="row text-center">
                             <div class="col-12 col-md-4 col-lg-3 col-xl-2 m-3"><img src="img/scrum.png"></div>
                             <div class="col-12 col-md-4 col-lg-3 col-xl-2 m-3"><p class="fw-bold fs-3">SMART</p></div>
                             <div class="col-12 col-md-4 col-lg-3 col-xl-2 m-3"><p class="fw-bold fs-3">KANBAN</p></div>
@@ -242,64 +242,6 @@
     </div>
 
     <script src="js/bootstrap.bundle.min.js"></script>
-
-    <script>
-
-        function elementFromHtml(html) {
-            const template = document.createElement("template");
-            template.innerHTML = html.trim();
-            return template.content.firstElementChild;
-        }
-
-        const card = `
-            <div id="project{id}" class="card col-lg-3 col-xl-2 mx-3 my-2" style="width: 20rem;">
-                <img src="{imageSource}" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title fw-bold">{cardTitle}</h5>
-                    <p class="card-text">{cardText}</p>
-                    <a href="{githubLink}" target="_blank" class="btn btn-primary">See more <i class="fa fa-github" aria-hidden="true"></i></a>
-                    <a href="{githubLink}" target="_blank" class="btn btn-primary {display}">Live demo <i class="fa-solid fa-play"></i></a>
-                </div>
-            </div>
-        `;
-
-        let projects = [
-            {
-                "imageSource" : "img/test.png",
-                "cardTitle" : "My Portfolio Page",
-                "cardText" : "My personal website with info about me, my projects and my career.",
-                "githubLink" : "https://github.com/RaulBelmonteSouza/My-Portfolio-Page",
-            },
-            
-            {
-                "imageSource" : "img/rest-api.png",
-                "cardTitle" : "Vehicle Control Application",
-                "cardText" : "Vehicle Control Application created to solve a code challenge from Zup Company",
-                "githubLink" : "https://github.com/RaulBelmonteSouza/RaulBelmonteSouza-vehicle-control-application",
-            },
-            
-            {
-                "imageSource" : "img/inpactus-website.png",
-                "cardTitle" : " Inpactus Website",
-                "cardText" : "In my birth I founded a small Software House called Inpactus to do some jobs building websites for small companies.",
-                "githubLink" : "https://github.com/RaulBelmonteSouza/inpactus",
-            },
-        ];
-
-        const cardsElement = document.getElementById("cards");
-
-        for(let i = 0; i < projects.length; i++) {
-            let newCard = card.replace("{imageSource}", projects[i].imageSource)
-            .replace("{cardTitle}", projects[i].cardTitle)
-            .replace("{cardText}", projects[i].cardText)
-            .replace("{githubLink}", projects[i].githubLink)
-            .replace("{id}", i + 1);
-
-            newCard = elementFromHtml(newCard);
-            cardsElement.appendChild(newCard);
-        }
-
-        console.log(cards);
-    </script>
+    <script src="js/index.js"></script>
   </body>
 </html>
